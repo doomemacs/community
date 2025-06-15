@@ -1,0 +1,70 @@
+labels: ["is:bug", "needs-triage"]
+body:
+- type: checkboxes
+  attributes:
+    label: "I confirm that..."
+    options:
+      - label: >
+          I searched the [FAQ](https://docs.doomemacs.org/-/faq), [issue tracker](https://doomemacs.org/todo), [discussions board](https://doomemacs.org/discuss), [documentation](https://docs.doomemacs.org), and [wiki](https://wiki.doomemacs.org), and found nothing about my issue.
+        required: true
+      - label: >
+          I read [the debugging guide](https://doomemacs.org/d/how2debug) and researched the issue to the best of my ability.
+        required: true
+      - label: >
+          My issue can be observed on the latest available commit of Doom.
+      - label: >
+          My issue can be observed on a stable release of Emacs (i.e. doesn't end in `.50`, `.60`, or `.9*`)
+- type: textarea
+  attributes:
+    label: Describe your issue
+    description: |
+      Please try to include as much information as possible. Such as:
+
+      - A [backtrace](https://doomemacs.org/d/how2backtrace) for any error messages.
+      - Any recent errors/warnings in the \*Messages\* buffer (`C-h e` to open it).
+      - Better explanations than "X does not work".
+      - Any attempts you made to resolve the issue yourself, and their result.
+      - Screenshots or screencasts, if possible.
+
+      **Please take the time to properly format code and text dumps with [code fences](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks), or use a [pastebin](https://pastebin.com) (or similar) service.**
+    placeholder: |
+      When I do X, it should do Y, but it does Z instead, which throws an error. Here is the backtrace:
+
+      ```
+      Debugger entered--Lisp error: (error "Beep Boop")
+        error("Beep Boop")
+        pp-eval-expression((error "Beep Boop"))
+        \#<subr funcall-interactively>(pp-eval-expression (error "Beep Boop"))
+        apply(#<subr funcall-interactively> (pp-eval-expression (error "Beep Boop")))
+        funcall-interactively(pp-eval-expression (error "Beep Boop"))
+      ```
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: >
+      Walk us through a minimal test case. Please spell out any keybinds and assume the reader knows little about Doom and/or Emacs.
+    placeholder: |
+      1. Open Emacs
+      2. `M-x doom/info` and be prompted to visit pastebin.com
+      3. Press `y` to open pastebin.com in browser
+      4. Paste the contents of my clipboard into text box
+      5. Click "Create New Paste"
+  validations:
+    required: true
+- type: input
+  id: doominfo
+  attributes:
+    label: System information
+    description: |
+      Execute `M-x doom/info` or `$EMACSDIR/bin/doom info`, post their output to [pastebin](https://pastebin.com) (or a similar service), and paste the link to it below. **Please do not paste multi-line output directly into this text box! It pollutes our search engine results and makes it harder for others to find issues!**
+    placeholder: https://pastebin.com/fakeurl
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      -----
+
+      :heart: **Thank you for taking the time to file this bug report!**

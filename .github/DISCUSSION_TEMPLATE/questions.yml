@@ -1,0 +1,41 @@
+labels: ["is:question", "needs-triage"]
+body:
+- type: markdown
+  attributes:
+    value: |
+      > [!WARNING]
+      > This category is not for potential bug reports!
+- type: checkboxes
+  attributes:
+    label: "I confirm that..."
+    options:
+      - label: >
+          I searched the [FAQ](https://docs.doomemacs.org/-/faq), [issue tracker](https://doomemacs.org/todo), [discussions board](https://doomemacs.org/discuss), [documentation](https://docs.doomemacs.org), and [wiki](https://wiki.doomemacs.org), and did not find an answer to my question.
+        required: true
+      - label: >
+          Any discussions with or conclusions derived from the use of LLMs will be omitted from my question.
+        required: true
+- type: textarea
+  attributes:
+    label: What is your question?
+    description: |
+      Please try to include as much information as possible. Such as [backtraces for any errors](https://doomemacs.org/d/how2backtrace), any recent errors/warnings in the \*Messages\* buffer (`C-h e` to open it), or attempts to answer your question yourself and their result. Screenshots and screencasts help too!
+
+      **Please take the time to properly format code and text dumps with [code fences](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks), or use a [pastebin](https://pastebin.com) (or similar) service.**
+    placeholder: |
+      How would I go about accomplishing X? I tried Y but it resulted in Z, instead. Here is the code I tried:
+
+      ```
+      <code goes here>
+      ```
+  validations:
+    required: true
+- type: input
+  id: doominfo
+  attributes:
+    label: System information
+    description: |
+      Post the output of `M-x doom/info` or `$EMACSDIR/bin/doom info` to pastebin (or a similar service) and paste the link to it below. **Please do not paste the info dump directly into this text box! It pollutes our search engine results and makes it harder for everyone to find things!**
+
+      If for some reason you can't supply this, write "n/a" below and describe your OS, Emacs version, and Doom config above.
+    placeholder: https://pastebin.com/fakeurl
