@@ -90,5 +90,5 @@ maintainer at support@doomemacs.org.
 Discord server][discord].
 
 
-[discuss]: https://doomemacs.org/discuss
-[discord]: https://doomemacs.org/discord
+[discuss]: https://discuss.doomemacs.org
+[discord]: https://discord.doomemacs.org
