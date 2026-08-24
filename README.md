@@ -55,6 +55,16 @@ significantly delayed.
 There are no plans to adopt any new platforms. It's enough effort managing what
 we have.
 
+- [Our Discord server's][discord] been up since 2018,
+- We had a Discourse site up until 2025, before we switched to [Github
+  Discussions][discuss],
+- A Matrix bridge was considered between 2021–2023, but finally dismissed
+  because it would be too much work to maintain and moderate (a bridge mirrors
+  conversations, but not moderator actions and spam filters),
+- [r/doomemacs](https://reddit.com/r/doomemacs) was created by someone else,
+  then handed over to @hlissner, [who does not intend to maintain
+  it]((https://www.reddit.com/r/DoomEmacs/comments/1unh7sk/use_our_discord_or_github_discussions_board/)).
+
 ## I have an issue to report, where do I report it?
 
 If you have ruled out personal configuration and upstream bugs (from Emacs or
