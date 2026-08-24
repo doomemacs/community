@@ -6,7 +6,7 @@ documentation about the project community's structure, social platforms, and
 policies.
 
 For a comprehensive list of resources, visit [the project's home
-page](https://doomemacs.org).
+page](https://doomemacs.org) (doomemacs.org).
 
 > [!IMPORTANT]
 > If you come across a Doom Emacs community in the wild, please encourage them
